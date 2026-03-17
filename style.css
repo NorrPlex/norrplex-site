@@ -2122,12 +2122,16 @@ a.contact-detail-value:hover {
   .pricing-grid { grid-template-columns: 1fr; max-width: 480px; }
   .pricing-card.featured { margin-top: 8px; }
   .pricing-hero { padding: 140px 0 60px; }
+  .pricing-pulse[style*="white-space"] {
+    white-space: normal !important;
+    max-width: 480px !important;
+  }
   .scalability-grid { grid-template-columns: 1fr; }
   .scalability-graph { padding: 16px; }
   .graph-y-label { display: none; }
   .graph-area { padding-left: 0; }
   .scalability-text { padding: 24px; }
-}
+} 
 /* ═══════════════════════════════════════
    ABOUT PAGE
    ═══════════════════════════════════════ */
