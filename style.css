@@ -1764,8 +1764,8 @@ a.contact-detail-value:hover {
 
 /* ─── PRICING PULSE ANIMATION ─── */
 @keyframes pricingPulse {
-  0%, 100% { opacity: 1; transform: scale(1); }
-  50% { opacity: 0.35; transform: scale(0.98); }
+  0%, 100% { opacity: 1; transform: scale(1); color: var(--text-secondary); }
+  50% { opacity: 0.35; transform: scale(0.98); color: var(--accent); }
 }
 
 .pricing-pulse {
