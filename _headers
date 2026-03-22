@@ -4,7 +4,6 @@
   X-Frame-Options: DENY
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: camera=(), microphone=(), geolocation=(), interest-cohort=()
-  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://norrplex-widget.pages.dev; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://norrplex-widget.pages.dev https://epyovgfyljxrhsqajeqq.supabase.co;
-
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://norrplex-widget.pages.dev; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://norrplex-widget.pages.dev https://epyovgfyljxrhsqajeqq.supabase.co;
 /.well-known/mta-sts.txt
   Content-Type: text/plain
