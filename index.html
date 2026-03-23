@@ -41,6 +41,10 @@
   <div class="hero-orb hero-orb-1"></div>
   <div class="hero-orb hero-orb-2"></div>
   <div class="hero-content">
+    <div class="hero-badge hero-badge-ai">
+      <span class="hero-badge-dot"></span>
+      <span class="hero-badge-text" id="aiBadgeText">Norrplex är en AI first-plattform</span>
+    </div>
     <div class="hero-badge">
       <span class="hero-badge-dot"></span>
       <span class="hero-badge-text" id="badgeText">En del av Arctic Business StartupLab</span>
@@ -619,6 +623,23 @@ function rotateBadge() {
 }
 
 setInterval(rotateBadge, 4000);
+
+// ─── Rotating AI badge text ───
+const aiBadgeTexts = ['Norrplex är en AI first-plattform', 'Byggd från grunden med AI som kärna'];
+const aiBadgeEl = document.getElementById('aiBadgeText');
+let aiBadgeIndex = 0;
+
+function rotateAiBadge() {
+  aiBadgeEl.style.transition = 'opacity 0.35s ease';
+  aiBadgeEl.style.opacity = '0';
+  setTimeout(() => {
+    aiBadgeIndex = (aiBadgeIndex + 1) % aiBadgeTexts.length;
+    aiBadgeEl.textContent = aiBadgeTexts[aiBadgeIndex];
+    aiBadgeEl.style.opacity = '1';
+  }, 350);
+}
+
+setInterval(rotateAiBadge, 4000);
 
 // ─── Navbar scroll effect ───
 const navbar = document.getElementById('navbar');
