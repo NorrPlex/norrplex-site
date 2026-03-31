@@ -64,7 +64,7 @@
       <!-- ÄNDRING: §2 omskriven — borttaget säljargument, "träning" ersatt, DPA tillagt -->
       <h2>2. Vad gör Norrplex?</h2>
       <p>Norrplex är en AI-driven webchat-plattform för organisationer med komplexa dokumentflöden. På uppdrag av kunden hanterar Norrplex uppsättning, dokumentindexering, konfigurering och löpande underhåll av tjänsten. Kunden tillhandahåller de dokument som ska ligga till grund för svaren — typiskt allmän information som policyer, riktlinjer och FAQ:er — varefter Norrplex indexerar dessa i ett vektordatalager som används för att generera svar i realtid.</p>
-      <p>Kunden erhåller en chatbot-widget som bäddas in på den egna webbplatsen. Slutanvändare — besökare på kundens webbplats — kan ställa frågor och få svar baserade uteslutande på kundens dokument. Behandling av eventuella personuppgifter som uppkommer i slutanvändarnas chattar regleras i ett separat personuppgiftsbiträdesavtal (DPA) som tecknas med varje kund.</p>
+      <p>Kunden erhåller en chatbot-widget som bäddas in på den egna webbplatsen. Slutanvändare — besökare på kundens webbplats — kan ställa frågor och få svar baserade uteslutande på kundens dokument. Indexerade dokument kan i undantagsfall innehålla allmänt tillgängliga personuppgifter, såsom kontaktuppgifter till organisationens representanter. Behandling av sådana uppgifter regleras i ett separat personuppgiftsbiträdesavtal (DPA) som tecknas med varje kund.</p>
 
       <h2>3. Vilka personuppgifter behandlar vi?</h2>
 
@@ -84,7 +84,7 @@
         <li>Innehåll i dokument som Norrplex indexerar på kundens uppdrag (avser allmän information som policyer, riktlinjer och FAQ:er)</li>
         <li>Saniterad chatttext — slutanvändares meddelanden genomgår automatisk PII-filtrering innan lagring; personnummer, e-postadresser, telefonnummer och kortnummer blockeras eller anonymiseras innan något sparas</li>
         <li>AI-genererade svar</li>
-        <li>Saniterade chattloggar — sparas enbart i syfte att följa upp svarskvalitet och generera aggregerad användningsstatistik. Lagring av chattloggar är valfri och kan inaktiveras per kund. Loggar sparas aldrig i syfte att identifiera enskilda slutanvändare.</li>
+        <li>Chattloggar — sparas i 90 dagar i syfte att följa upp svarskvalitet och generera användningsstatistik. Loggar innehåller aldrig personuppgifter tack vare automatisk PII-filtrering i två lager (se §8). Kunder som inte önskar logglagring kan inaktivera detta helt.</li>
         <li>Användningsstatistik per tenant (aggregerad)</li>
       </ul>
       <p>För dessa behandlingar är kunden personuppgiftsansvarig. Norrplex behandlar uppgifterna enbart enligt kundens instruktioner och i enlighet med gällande personuppgiftsbiträdesavtal.</p>
@@ -159,8 +159,8 @@
           </tr>
           <tr>
             <td>Chattloggar (biträde)</td>
-            <td>90 dagar (standard)</td>
-            <td>Valfri per kund — kan inaktiveras helt. Används enbart för statistik och kvalitetsuppföljning.</td>
+            <td>90 dagar</td>
+            <td>Automatisk radering. Kan inaktiveras per kund. Innehåller aldrig personuppgifter.</td>
           </tr>
           <tr>
             <td>Dokument (biträde)</td>
