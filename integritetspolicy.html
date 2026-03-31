@@ -84,7 +84,7 @@
         <li>Innehåll i dokument som Norrplex indexerar på kundens uppdrag (avser allmän information som policyer, riktlinjer och FAQ:er)</li>
         <li>Saniterad chatttext — slutanvändares meddelanden genomgår automatisk PII-filtrering innan lagring; personnummer, e-postadresser, telefonnummer och kortnummer blockeras eller anonymiseras innan något sparas</li>
         <li>AI-genererade svar</li>
-        <li>Chattloggar (saniterade frågor, svar, tidstämplar)</li>
+        <li>Saniterade chattloggar — sparas enbart i syfte att följa upp svarskvalitet och generera aggregerad användningsstatistik. Lagring av chattloggar är valfri och kan inaktiveras per kund. Loggar sparas aldrig i syfte att identifiera enskilda slutanvändare.</li>
         <li>Användningsstatistik per tenant (aggregerad)</li>
       </ul>
       <p>För dessa behandlingar är kunden personuppgiftsansvarig. Norrplex behandlar uppgifterna enbart enligt kundens instruktioner och i enlighet med gällande personuppgiftsbiträdesavtal.</p>
@@ -160,7 +160,7 @@
           <tr>
             <td>Chattloggar (biträde)</td>
             <td>90 dagar (standard)</td>
-            <td>Konfigurerbar per kund</td>
+            <td>Valfri per kund — kan inaktiveras helt. Används enbart för statistik och kvalitetsuppföljning.</td>
           </tr>
           <tr>
             <td>Dokument (biträde)</td>
