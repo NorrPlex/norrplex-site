@@ -40,7 +40,8 @@
   <div class="container" style="position:relative;z-index:1;">
     <p class="section-label">Juridik & Transparens</p>
     <h1 class="section-title">Integritetspolicy</h1>
-    <p class="section-sub">Så hanterar Norrplex personuppgifter — öppet och tydligt.</p>
+    <!-- ÄNDRING: Tog bort "öppet och tydligt" (säljargument) -->
+    <p class="section-sub">Så hanterar Norrplex personuppgifter.</p>
   </div>
 </section>
 
@@ -50,36 +51,40 @@
     <div class="policy-content">
       <p class="policy-updated">Senast uppdaterad: 19 mars 2026</p>
 
+      <!-- ÄNDRING: Konsekvent "Norrplex AB" (litet p) genom hela dokumentet -->
       <h2>1. Vem är ansvarig?</h2>
-      <p>NorrPlex AB, org.nr 559577-1295, är personuppgiftsansvarig för de behandlingar som beskrivs i denna integritetspolicy. För behandlingar som sker på uppdrag av våra kunder är Norrplex personuppgiftsbiträde och kunden är personuppgiftsansvarig.</p>
+      <p>Norrplex AB, org.nr 559577-1295, är personuppgiftsansvarig för de behandlingar som beskrivs i denna integritetspolicy. För behandlingar som sker på uppdrag av våra kunder är Norrplex personuppgiftsbiträde och kunden är personuppgiftsansvarig.</p>
       <p><strong>Kontakt:</strong><br>
-        NorrPlex AB<br>
+        Norrplex AB<br>
         Yttervägen 27B, 936 31 Boliden<br>
         E-post: <a href="/cdn-cgi/l/email-protection#95faf3f3fcf6f0d5fbfae7e7e5f9f0edbbe6f0" style="color:var(--accent);"><span class="__cf_email__" data-cfemail="315e5757585254715f5e4343415d54491f4254">[email&#160;protected]</span></a><br>
         Webb: <a href="https://norrplex.se" style="color:var(--accent);">norrplex.se</a>
       </p>
 
+      <!-- ÄNDRING: §2 omskriven — borttaget säljargument, "träning" ersatt, DPA tillagt -->
       <h2>2. Vad gör Norrplex?</h2>
-      <p>Norrplex är en AI-driven chatbot-plattform där Norrplex, på uppdrag av organisationer (kunder), hanterar allt från uppsättning och dokumenthantering till träning, underhåll och optimering. Kunden får en chatbot-widget som bäddas in på deras webbplats. Slutanvändare — besökare på kundens webbplats — kan ställa frågor och få svar baserade på kundens dokument. Kunden behöver aldrig röra tekniken.</p>
+      <p>Norrplex är en AI-driven webchat-plattform för organisationer med komplexa dokumentflöden. På uppdrag av kunden hanterar Norrplex uppsättning, dokumentindexering, konfigurering och löpande underhåll av tjänsten. Kunden tillhandahåller de dokument som ska ligga till grund för svaren — typiskt allmän information som policyer, riktlinjer och FAQ:er — varefter Norrplex indexerar dessa i ett vektordatalager som används för att generera svar i realtid.</p>
+      <p>Kunden erhåller en chatbot-widget som bäddas in på den egna webbplatsen. Slutanvändare — besökare på kundens webbplats — kan ställa frågor och få svar baserade uteslutande på kundens dokument. Behandling av eventuella personuppgifter som uppkommer i slutanvändarnas chattar regleras i ett separat personuppgiftsbiträdesavtal (DPA) som tecknas med varje kund.</p>
 
       <h2>3. Vilka personuppgifter behandlar vi?</h2>
 
       <h3>3.1 När Norrplex är personuppgiftsansvarig</h3>
       <p>Vi behandlar följande uppgifter för våra egna ändamål:</p>
       <ul>
-        <li>NorrPlex interna administratörer: namn, e-postadress, lösenordshash</li>
+        <li>Norrplex interna administratörer: namn, e-postadress, lösenordshash</li>
         <li>Fakturering: företagsuppgifter, kontaktperson, fakturahistorik</li>
         <li>Support: namn, e-post, ärendeinnehåll</li>
         <li>Säkerhetsloggar: användar-ID, tidstämplar, åtgärdstyp</li>
       </ul>
 
+      <!-- ÄNDRING: §3.2 — "Fritext från slutanvändare" ersatt med korrekt beskrivning av saniterad chatttext -->
       <h3>3.2 När Norrplex är personuppgiftsbiträde</h3>
       <p>På uppdrag av våra kunder behandlar vi:</p>
       <ul>
-        <li>Innehåll i dokument som Norrplex laddar upp på kundens uppdrag (kan innehålla personuppgifter beroende på dokumentens karaktär)</li>
-        <li>Fritext från slutanvändare i chatten</li>
+        <li>Innehåll i dokument som Norrplex indexerar på kundens uppdrag (avser allmän information som policyer, riktlinjer och FAQ:er)</li>
+        <li>Saniterad chatttext — slutanvändares meddelanden genomgår automatisk PII-filtrering innan lagring; personnummer, e-postadresser, telefonnummer och kortnummer blockeras eller anonymiseras innan något sparas</li>
         <li>AI-genererade svar</li>
-        <li>Chattloggar (frågor, svar, tidstämplar)</li>
+        <li>Chattloggar (saniterade frågor, svar, tidstämplar)</li>
         <li>Användningsstatistik per tenant (aggregerad)</li>
       </ul>
       <p>För dessa behandlingar är kunden personuppgiftsansvarig. Norrplex behandlar uppgifterna enbart enligt kundens instruktioner och i enlighet med gällande personuppgiftsbiträdesavtal.</p>
@@ -178,11 +183,13 @@
         <li><strong>Cloudflare</strong> — CDN och hosting av admin-panel och widget. Enbart statiskt innehåll.</li>
         <li><strong>GitHub (Microsoft)</strong> — Kodhantering. Ingen kunddata i kod. USA, EU-US Data Privacy Framework.</li>
       </ul>
-      <p>Vi säljer aldrig personuppgifter till tredje part. Vi delar enbart uppgifter med leverantörer som behövs för att leverera tjänsten, och alla har DPA på plats.</p>
+      <!-- ÄNDRING: "Vi säljer aldrig" ersatt med neutral juridisk formulering -->
+      <p>Personuppgifter delas inte med tredje part i kommersiellt syfte. Vi delar enbart uppgifter med leverantörer som behövs för att leverera tjänsten, och alla har DPA på plats.</p>
 
       <h2>7. Överföring utanför EU/EES</h2>
       <p>Vi strävar efter att all behandling sker inom EU/EES. Vår databas och AI-behandling ligger i EU-regioner. GitHub har närvaro i USA men omfattas av EU-US Data Privacy Framework (adekvansbeslut). Ingen kunddata lagras i vår kod.</p>
 
+      <!-- ÄNDRING: §8 utökad med PII-skyddsåtgärder -->
       <h2>8. Användning av AI</h2>
       <p>Norrplex använder AI-modeller (via Azure OpenAI) för att bearbeta slutanvändares frågor mot kundens dokument. Viktigt att veta:</p>
       <ul>
@@ -190,6 +197,9 @@
         <li>Data som skickas till AI-modellen används enbart för att generera svar i realtid.</li>
         <li>AI-behandlingen sker inom EU-region.</li>
         <li>Inga automatiserade beslut med rättslig verkan fattas av systemet.</li>
+        <li>Chatwidgeten visar en tydlig varningstext om att känsliga personuppgifter inte ska anges i chatten.</li>
+        <li>Meddelanden kontrolleras automatiskt för personuppgifter (personnummer, e-post, telefonnummer, kortnummer) innan de skickas vidare. Identifieras sådana uppgifter avbryts behandlingen och inget skickas till AI-modellen.</li>
+        <li>Som ett ytterligare säkerhetslager anonymiseras eventuellt kvarvarande känslig information innan chattloggar sparas.</li>
       </ul>
 
       <h2>9. Dina rättigheter</h2>
@@ -205,13 +215,17 @@
       <p>Kontakta oss på <a href="/cdn-cgi/l/email-protection#c8a7aeaea1abad88a6a7babab8a4adb0e6bbad" style="color:var(--accent);"><span class="__cf_email__" data-cfemail="b4dbd2d2ddd7d1f4dadbc6c6c4d8d1cc9ac7d1">[email&#160;protected]</span></a> för att utöva dina rättigheter. Vi besvarar din begäran inom 30 dagar.</p>
       <p>Om du är slutanvändare av en chatbot på en kunds webbplats är det kunden som är personuppgiftsansvarig. Vänd dig i första hand till dem. Norrplex bistår kunden vid hantering av sådana begäranden.</p>
 
+      <!-- ÄNDRING: §10 utökad med RLS, domänbegränsning och kontroll av komprometterade lösenord -->
       <h2>10. Säkerhet</h2>
       <p>Vi skyddar personuppgifter med bland annat:</p>
       <ul>
         <li>Kryptering vid överföring (TLS/HTTPS) och i vila (AES-256)</li>
-        <li>Tenant-isolering — varje kunds data är separerad från andra kunders</li>
+        <li>Tenant-isolering — varje kunds data är separerad från andra kunders genom Row Level Security (RLS) på databasnivå</li>
+        <li>Domänbegränsning — chatwidgeten är låst till kundens angivna domäner; anrop från obehöriga domäner avvisas</li>
         <li>Autentisering och åtkomstkontroll för alla system</li>
         <li>MFA för administratörskonton</li>
+        <li>Kontroll mot databas för komprometterade lösenord vid inloggning</li>
+        <li>Automatisk PII-filtrering i chatflödet (se §8)</li>
         <li>Regelbunden säkerhetsgenomgång</li>
       </ul>
 
@@ -232,7 +246,7 @@
 
       <div class="policy-contact-card">
         <h3>14. Kontakt</h3>
-        <p><strong>NorrPlex AB</strong></p>
+        <p><strong>Norrplex AB</strong></p>
         <p>Org.nr: 559577-1295</p>
         <p>Yttervägen 27B, 936 31 Boliden</p>
         <p>E-post: <a href="/cdn-cgi/l/email-protection#f29d94949b9197b29c9d8080829e978adc8197" style="color:var(--accent);"><span class="__cf_email__" data-cfemail="84ebe2e2ede7e1c4eaebf6f6f4e8e1fcaaf7e1">[email&#160;protected]</span></a></p>
@@ -268,4 +282,8 @@
         </ul>
       </div>
     </div>
-    <div cl
+  </div>
+</footer>
+
+</body>
+</html>
