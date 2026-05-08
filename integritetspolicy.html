@@ -64,7 +64,7 @@
       <!-- ÄNDRING: §2 omskriven — borttaget säljargument, "träning" ersatt, DPA tillagt -->
       <h2>2. Vad gör Norrplex?</h2>
       <p>Norrplex är en AI-driven webchat-plattform för organisationer med komplexa dokumentflöden. På uppdrag av kunden hanterar Norrplex uppsättning, dokumentindexering, konfigurering och löpande underhåll av tjänsten. Kunden tillhandahåller de dokument som ska ligga till grund för svaren — typiskt allmän information som policyer, riktlinjer och FAQ:er — varefter Norrplex indexerar dessa i ett vektordatalager som används för att generera svar i realtid.</p>
-      <p>Kunden erhåller en chatbot-widget som bäddas in på den egna webbplatsen. Slutanvändare — besökare på kundens webbplats — kan ställa frågor och få svar baserade uteslutande på kundens dokument. Indexerade dokument kan i undantagsfall innehålla allmänt tillgängliga personuppgifter, såsom kontaktuppgifter till organisationens representanter. Behandling av sådana uppgifter regleras i ett separat personuppgiftsbiträdesavtal (DPA) som tecknas med varje kund.</p>
+      <p>Kunden erhåller en webchat-widget som bäddas in på den egna webbplatsen. Slutanvändare — besökare på kundens webbplats — kan ställa frågor och få svar baserade uteslutande på kundens dokument. Indexerade dokument kan i undantagsfall innehålla allmänt tillgängliga personuppgifter, såsom kontaktuppgifter till organisationens representanter. Behandling av sådana uppgifter regleras i ett separat personuppgiftsbiträdesavtal (DPA) som tecknas med varje kund.</p>
 
       <h2>3. Vilka personuppgifter behandlar vi?</h2>
 
@@ -189,7 +189,7 @@
         <li>Data som skickas till AI-modellen används enbart för att generera svar i realtid — modellen tränas aldrig på kunddata eller chattdata.</li>
         <li>AI-behandlingen sker inom EU-region.</li>
         <li>Inga automatiserade beslut med rättslig verkan fattas av systemet.</li>
-        <li>Chatwidgeten visar en tydlig varningstext om att känsliga personuppgifter inte ska anges i chatten.</li>
+        <li>Webchat-widgeten visar en tydlig varningstext om att känsliga personuppgifter inte ska anges i chatten.</li>
         <li>Meddelanden kontrolleras automatiskt för personuppgifter (personnummer, e-post, telefonnummer, kortnummer) innan de skickas vidare. Identifieras sådana uppgifter avbryts behandlingen och inget skickas till AI-modellen.</li>
         <li>Som ett ytterligare säkerhetslager anonymiseras eventuellt kvarvarande känslig information innan chattloggar sparas.</li>
       </ul>
@@ -205,7 +205,7 @@
         <li><strong>Rätt att invända</strong> — invända mot behandling baserad på berättigat intresse</li>
       </ul>
       <p>Kontakta oss på <a href="mailto:office@norrplex.se" style="color:var(--accent);">office@norrplex.se</a> för att utöva dina rättigheter. Vi besvarar din begäran inom 30 dagar.</p>
-      <p>Om du är slutanvändare av en chatbot på en kunds webbplats är det kunden som är personuppgiftsansvarig. Vänd dig i första hand till dem. Norrplex bistår kunden vid hantering av sådana begäranden.</p>
+      <p>Om du är slutanvändare av en webchat på en kunds webbplats är det kunden som är personuppgiftsansvarig. Vänd dig i första hand till dem. Norrplex bistår kunden vid hantering av sådana begäranden.</p>
 
       <!-- ÄNDRING: §10 utökad med RLS, domänbegränsning och kontroll av komprometterade lösenord -->
       <h2>10. Säkerhet</h2>
@@ -213,7 +213,7 @@
       <ul>
         <li>Kryptering vid överföring (TLS/HTTPS) och i vila (AES-256)</li>
         <li>Tenant-isolering — varje kunds data är separerad från andra kunders genom Row Level Security (RLS) på databasnivå</li>
-        <li>Domänbegränsning — chatwidgeten är låst till kundens angivna domäner; anrop från obehöriga domäner avvisas</li>
+        <li>Domänbegränsning — webchat-widgeten är låst till kundens angivna domäner; anrop från obehöriga domäner avvisas</li>
         <li>Autentisering och åtkomstkontroll för alla system</li>
         <li>MFA för administratörskonton</li>
         <li>Kontroll mot databas för komprometterade lösenord vid inloggning</li>
@@ -221,7 +221,7 @@
       </ul>
 
       <h2>11. Cookies</h2>
-      <p>Norrplex chatbot-widget använder inga cookies. Admin-panelen använder sessionsbaserade cookies för autentisering. Inga tredjepartscookies eller spårningscookies används.</p>
+      <p>Norrplex webchat-widget använder inga cookies. Admin-panelen använder sessionsbaserade cookies för autentisering. Inga tredjepartscookies eller spårningscookies används.</p>
 
       <h2>12. Ändringar i policyn</h2>
       <p>Vi kan uppdatera denna integritetspolicy. Vid väsentliga ändringar informerar vi berörda via e-post eller på vår webbplats. Senaste versionen finns alltid på denna sida.</p>
@@ -256,7 +256,7 @@
         <a href="/" class="logo">
           <span class="logo-norr">Norr</span><span class="logo-plex">plex</span>
         </a>
-        <p>AI-assistent utan persondata – för organisationer med regelverk.</p>
+        <p>AI-driven webchat utan persondata – för organisationer med regelverk.</p>
         <a href="https://www.linkedin.com/company/norrplex" target="_blank" rel="noopener" class="footer-linkedin">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
           Följ oss på LinkedIn
